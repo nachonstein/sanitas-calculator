@@ -1,7 +1,8 @@
 package com.sanitas.calculator.service;
 
-import org.springframework.stereotype.Service;
+import com.sanitas.calculator.domain.Operation;
 
-@Service
-public class CalculatorService {
+
+public interface CalculatorService {
+    Number operate(Operation operation);
 }
